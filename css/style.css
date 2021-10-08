@@ -1,15 +1,116 @@
-/* @font-face {
-    font-family: 'iransans';
-    src: url("../font/IRANSansWeb.ttf");
-    font-weight: 400;
-    font-style: normal;
-} */
-*{
-    margin: 0 auto;
-    padding: 0;
-    box-sizing: border-box;
+@font-face {
+  font-family: "BarlowSemiCondensed";
+  src: url("../Font/BarlowSemiCondensed-Light.ttf");
+
+  font-style: normal;
 }
-body{
-    font-family:'iransans';
-    /* background: #000; */
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "BarlowSemiCondensed";
+  background: hsl(210, 46%, 95%);
+}
+.attribution {
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  bottom: 20px;
+  display: none;
+}
+.main {
+  width: 90%;
+  height: 600px;
+  display: grid;
+  grid-template-columns: auto 20% auto 25%;
+  margin: 50px auto;
+  gap: 20px;
+  grid-template-areas: "myItem-1 myItem-1 myItem-2 myItem-3" "myItem-4 myItem-5 myItem-5 myItem-3";
+}
+.div {
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 0px 20px 4px rgb(0 0 0 / 15%);
+  border-radius: 10px;
+  padding: 30px;
+  position: relative;
+  text-align: left;
+}
+
+.color-1 {
+  background: hsl(263, 55%, 52%);
+}
+.color-2 {
+  background: hsl(217, 19%, 35%);
+}
+.color-3-4 {
+  background: hsl(0, 0%, 100%);
+}
+.color-5 {
+  background: hsl(219, 29%, 14%);
+}
+.profile {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 15px;
+}
+.image-gab {
+  width: 30px;
+  height: 30px;
+  background: hsl(0, 0%, 100%);
+  border-radius: 50%;
+  padding: 1px;
+  margin: 0;
+  display: inline-block;
+}
+.image-gab img {
+  width: 100%;
+  border-radius: 50%;
+}
+.title {
+  display: inline-block;
+  color: hsl(0, 0%, 100%);
+  margin-left: 15px;
+  transform: translateY(-3px);
+}
+.title h3 {
+  font-size: 13px;
+  color: hsl(210, 46%, 95%);
+  font-weight: 200;
+  font-weight: 600;
+}
+.title p {
+  font-size: 11px;
+  color: hsl(0, 0%, 81%);
+  font-weight: 500;
+  margin-top: 4px;
+  z-index: 10;
+}
+.div-to-p {
+  color: hsl(0, 0%, 100%);
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 25px;
+}
+.div-to-p-2 {
+  color: hsl(0, 0%, 81%);
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 18px;
+  margin-top: 20px;
+}
+.black .title h3 {
+  color: #000;
+}
+.black .title p {
+  color: #000;
+}
+
+.black .div-to-p {
+  color: #000;
+}
+.black .div-to-p-2 {
+  color: #000;
 }
